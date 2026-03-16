@@ -212,7 +212,3 @@ No API key required to reproduce evaluation tables (LLM calls are skipped when `
 | pyyaml | ≥6.0 | Configuration loading |
 
 ---
-
-## License
-
-Academic use only – CEN-451 Information Security, Bahria University.
