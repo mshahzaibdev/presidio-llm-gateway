@@ -8,7 +8,6 @@ Custom Presidio Recognizers (Customization #1, #2, #3)
 
 from presidio_analyzer import Pattern, PatternRecognizer
 
-
 class PakistaniCNICRecognizer(PatternRecognizer):
     """
     Recognises Pakistani Computerised National Identity Card numbers.

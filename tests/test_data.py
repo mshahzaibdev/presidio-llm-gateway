@@ -274,6 +274,7 @@ PRESIDIO_VALIDATION_INPUTS = [
         "id": "PRES-06",
         "customization": "Confidence Calibration",
         "input": "Send this to john@company.com by 2024-01-15 at the Lahore office",
-        "note": "EMAIL calibration +0.05, DATE_TIME -0.10, LOCATION -0.05",
+        "expected_entity": "EMAIL_ADDRESS",
+        "note": "EMAIL calibration +0.05, DATE_TIME -0.35, LOCATION -0.35 (reduces FP)",
     },
 ]

@@ -105,6 +105,7 @@ RED_FLAG_PATTERNS = [
     r"bypass\s+(safety|security|filter)",
     r"developer\s+mode",
     r"evil\s+mode",
+    r"new\s+instructions?:",
 ]
 
 
