@@ -1,0 +1,34 @@
+gateway:
+  injection_threshold: 50        # Score 0-100 above which input is BLOCKED
+  pii_confidence_threshold: 0.7  # Presidio confidence above which PII is masked
+  anonymization_enabled: true
+
+policy:
+  block_on_injection: true
+  mask_on_pii: true
+  log_decisions: true
+
+llm:
+  provider: openrouter
+  model: "meta-llama/llama-3.1-8b-instruct:free"
+  max_tokens: 1000
+  timeout: 30
+  base_url: "https://openrouter.ai/api/v1"
+
+presidio:
+  supported_entities:
+    - PERSON
+    - EMAIL_ADDRESS
+    - PHONE_NUMBER
+    - LOCATION
+    - DATE_TIME
+    - CREDIT_CARD
+    - US_SSN
+    - IBAN_CODE
+    - PK_CNIC
+    - PK_PHONE
+    - API_KEY
+
+logging:
+  level: INFO
+  file: logs/gateway.log
