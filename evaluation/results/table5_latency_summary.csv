@@ -1,0 +1,5 @@
+Component,Min (ms),Max (ms),Mean (ms),Median (ms),Std Dev (ms),Samples
+Injection Detection,0.073,0.453,0.202,0.176,0.096,21
+Presidio Analysis,9.205,27.789,16.649,16.391,5.317,21
+Policy Decision,0.006,0.021,0.01,0.01,0.003,21
+Total Pipeline,17.25,1957.776,755.294,812.916,447.447,21

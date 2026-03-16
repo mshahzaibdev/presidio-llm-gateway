@@ -1,0 +1,7 @@
+ID,Customization,Input,Entities Detected,Confidence Scores,Baseline Score,Context Score,Boost Applied,Composite Risk,Pass
+PRES-01,PakistaniCNICRecognizer,My CNIC number is 42201-9876543-2.,PK_CNIC,1.000,N/A,N/A,N/A,0.70,PASS
+PRES-02,PakistaniPhoneRecognizer,Call me at 0312-3456789 or +923001234567.,"PK_PHONE, PK_PHONE","0.950, 0.900",N/A,N/A,N/A,0.40,PASS
+PRES-03,APIKeyRecognizer,Use this API key: sk-abcdefgh1234567890abcdefgh123456,API_KEY,1.000,N/A,N/A,N/A,0.70,PASS
+PRES-04,Context-Aware Scoring,My personal phone number is 03001234567,"PK_PHONE, PERSON, PHONE_NUMBER","1.000, 1.000, 0.900",1.000,1.000,NO,1.00,PASS
+PRES-05,Composite Entity Detection,"I am Sara Ahmed, living in Karachi, my number is 03001234567","PK_PHONE, EMAIL_ADDRESS, PERSON, PERSON, PHONE_NUMBER","1.000, 1.000, 1.000, 1.000, 0.900",N/A,N/A,N/A,1.00,PASS
+PRES-06,Confidence Calibration,Send this to john@company.com by 2024-01-15 at the Lahore of,EMAIL_ADDRESS,1.000,N/A,N/A,N/A,0.40,FAIL
